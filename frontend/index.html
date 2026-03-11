@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Workout Progress Intelligence</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Workout Progress Intelligence</h1>
+        </header>
+        <main>
+            <section id="workout-form">
+                <h2>Add Workout</h2>
+                <form id="sessionForm">
+                    <label for="date">Workout Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <div id="exercises-container">
+                        
+                    </div>
+                        <div class="button-container">
+                                  <button type="button" id="addExercise">Add Exercise</button>
+                                 <button type="submit" id="saveWorkout">Save Workout</button>
+                                  </div>
+
+                </form>
+            </section>
+
+            <section id="workout-list">
+                <h2>Saved Workouts</h2>
+                <div id="workouts">
+                </div>
+            </section>
+            <section id="analysis">
+                <h2>Analysis</h2>
+                <div id="plateau-analysis" class="analysis"></div>
+                <div id="progress-analysis" class="analysis"></div>
+                <div id="next-weights" class="analysis"></div>
+            </section>
+            
+        </main>
+        <footer>
+            <p>&copy; 2026 Workout progress Intelligence</p>
+        </footer>
+        <script src="script.js" defer> </script>
+    </body>
+    </html>
